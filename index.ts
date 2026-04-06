@@ -330,7 +330,7 @@ const PROVIDER_ID = 'codex-auth';
 export default class OpenAIAuthExtension implements Extension {
   static metadata = {
     name: 'Codex Auth Provider',
-    version: '1.0.0',
+    version: '1.0.1',
     description: 'OpenAI Codex provider using ChatGPT Plus/Pro OAuth authentication',
     author: 'AiderDesk',
   };
@@ -349,6 +349,10 @@ export default class OpenAIAuthExtension implements Extension {
   }
 
   async onAgentStarted(event: AgentStartedEvent) {
+    if (event.providerProfile.provider.name !== PROVIDER_ID) {
+      return undefined;
+    }
+
     this.currentSystemPrompt = event.systemPrompt ?? undefined;
     return {
       systemPrompt: '', // Clear system prompt since it's used as instructions for the provider instead,
