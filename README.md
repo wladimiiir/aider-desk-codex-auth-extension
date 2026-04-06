@@ -6,9 +6,15 @@ It provides an OpenAI Codex provider using **ChatGPT Plus/Pro OAuth authenticati
 
 ## Installation
 
-You can install the extension either manually or with the AiderDesk extensions CLI.
+You can install the extension either with the AiderDesk extensions CLI or manually.
 
-### Option 1: Manual installation
+### Option 1: Install with the extensions CLI globally for all projects
+
+```bash
+npx -y @aiderdesk/extensions install https://github.com/wladimiiir/aider-desk-codex-auth-extension --global
+```
+
+### Option 2: Manual installation
 
 Clone the repository into your `~/.aider-desk/extensions/` folder and install dependencies:
 
@@ -17,12 +23,6 @@ cd ~/.aider-desk/extensions/
 git clone https://github.com/wladimiiir/aider-desk-codex-auth-extension
 cd aider-desk-codex-auth-extension
 npm install
-```
-
-### Option 2: Install with the extensions CLI
-
-```bash
-npx -y @aiderdesk/extensions install https://github.com/wladimiiir/aider-desk-codex-auth-extension
 ```
 
 After installation, AiderDesk will pick up the extension automatically via hot reload.
