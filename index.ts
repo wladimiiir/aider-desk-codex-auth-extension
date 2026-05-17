@@ -44,6 +44,7 @@ interface StoredTokens {
 // Hardcoded models from https://developers.openai.com/codex/models
 const CODEX_MODELS: Model[] = [
   // Recommended
+  { id: 'gpt-5.5', providerId: '', maxInputTokens: 1050000, maxOutputTokensLimit: 128000 },
   { id: 'gpt-5.4', providerId: '', maxInputTokens: 1050000, maxOutputTokensLimit: 128000 },
   { id: 'gpt-5.4-mini', providerId: '', maxInputTokens: 400000, maxOutputTokensLimit: 128000 },
   { id: 'gpt-5.3-codex', providerId: '', maxInputTokens: 400000, maxOutputTokensLimit: 128000 },
@@ -330,9 +331,10 @@ const PROVIDER_ID = 'codex-auth';
 export default class OpenAIAuthExtension implements Extension {
   static metadata = {
     name: 'Codex Auth Provider',
-    version: '1.0.1',
+    version: '1.1.0',
     description: 'OpenAI Codex provider using ChatGPT Plus/Pro OAuth authentication',
-    author: 'AiderDesk',
+    iconUrl: 'https://raw.githubusercontent.com/wladimiiir/aider-desk-codex-auth-extension/refs/heads/main/icon.png',
+    author: 'wladimiiir',
   };
 
   private currentSystemPrompt: string | undefined;
