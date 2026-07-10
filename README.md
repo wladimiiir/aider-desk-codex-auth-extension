@@ -43,6 +43,9 @@ Since Codex OAuth tokens cannot access the `/v1/models` API, the available model
 
 | Model               | Description                                  |
 | ------------------- | -------------------------------------------- |
+| `gpt-5.6-sol`       | Flagship GPT-5.6 model for complex coding, computer use, research, and cybersecurity |
+| `gpt-5.6-terra`     | Balanced GPT-5.6 model for everyday work |
+| `gpt-5.6-luna`      | Fast and affordable GPT-5.6 model for cost-sensitive, high-volume tasks |
 | `gpt-5.4`           | Flagship frontier model for professional work |
 | `gpt-5.4-mini`      | Fast, efficient mini model for responsive tasks |
 | `gpt-5.3-codex`     | Industry-leading coding model                |
