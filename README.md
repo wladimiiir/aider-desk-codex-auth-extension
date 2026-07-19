@@ -1,4 +1,16 @@
-# Codex Auth Provider
+# ⚠️ Deprecated — Codex Auth Provider
+
+> **This repository is deprecated.** The extension is now part of the officially supported AiderDesk extensions and is maintained in-repo at [hotovo/aider-desk — `packages/extensions/extensions/openai-codex`](https://github.com/hotovo/aider-desk/tree/main/packages/extensions/extensions/openai-codex).
+
+Install it directly from the AiderDesk extension registry:
+
+```bash
+npx -y @aiderdesk/extensions install openai-codex --global
+```
+
+No further updates will be published to this standalone repository. Existing installs will continue to work until OpenAI or AiderDesk introduces breaking changes — please migrate to the official in-repo version to receive updates.
+
+---
 
 Codex Auth Provider is an extension for [AiderDesk](https://aiderdesk.hotovo.com) ([GitHub](https://github.com/hotovo/aider-desk)).
 
